@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://soapandglory.co.uk/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://soapandglory.co.uk/images/products/the-righteous-butter.webp</image:loc>
+      <image:title>Soap &amp; Glory The Righteous Butter™ Body Butter</image:title>
+    </image:image>
+  </url>
+
+  <!-- Bath & Body Collection -->
+  <url>
+    <loc>https://soapandglory.co.uk/bath-body</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soapandglory.co.uk/images/products/clean-on-me-body-wash.webp</image:loc>
+      <image:title>Soap &amp; Glory Clean On Me™ Creamy Clarifying Shower Gel</image:title>
+    </image:image>
+  </url>
+
+  <!-- Skincare & Cleansers Collection -->
+  <url>
+    <loc>https://soapandglory.co.uk/skincare</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soapandglory.co.uk/images/products/face-soap-and-clarity.webp</image:loc>
+      <image:title>Soap &amp; Glory Face Soap &amp; Clarity™ 3-in-1 Daily Face Wash</image:title>
+    </image:image>
+  </url>
+
+  <!-- Cosmetics & Lips Makeup Collection -->
+  <url>
+    <loc>https://soapandglory.co.uk/makeup</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soapandglory.co.uk/images/products/sexy-mother-pucker-xxl.webp</image:loc>
+      <image:title>Soap &amp; Glory Sexy Mother Pucker™ Pillow Plump XXL</image:title>
+    </image:image>
+  </url>
+
+  <!-- Body Fragrance Mists Collection -->
+  <url>
+    <loc>https://soapandglory.co.uk/fragrance</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soapandglory.co.uk/images/products/original-pink-fragrance-spritz.jpg</image:loc>
+      <image:title>Soap &amp; Glory Original Pink™ Body Spray Fragrance Mist</image:title>
+    </image:image>
+  </url>
+
+  <!-- Gifting & Star Gifts Collection -->
+  <url>
+    <loc>https://soapandglory.co.uk/gifting</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://soapandglory.co.uk/images/products/pinkly-the-best-fragrance-set.jpg</image:loc>
+      <image:title>Soap &amp; Glory Pinkly The Best™ Luxury Star Gift Set</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Us & Heritage -->
+  <url>
+    <loc>https://soapandglory.co.uk/about</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Us & Customer Care -->
+  <url>
+    <loc>https://soapandglory.co.uk/contact</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://soapandglory.co.uk/privacy</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms & Conditions -->
+  <url>
+    <loc>https://soapandglory.co.uk/terms</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Official Disclaimers -->
+  <url>
+    <loc>https://soapandglory.co.uk/disclaimer</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

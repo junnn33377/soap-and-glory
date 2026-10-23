@@ -1,0 +1,147 @@
+/* Soap & Glory Design Tokens & CSS Custom Properties */
+:root {
+  /* Core Brand Colors */
+  --sg-pink: #FF3377;
+  --sg-pink-hover: #E01E62;
+  --sg-pink-active: #C20F4F;
+  --sg-pink-light: #FFF0F5;
+  --sg-pink-soft: #FFE4EE;
+  --sg-pink-glow: rgba(255, 51, 119, 0.25);
+  
+  --sg-berry: #8C133B;
+  --sg-black: #161316;
+  --sg-charcoal: #2A2529;
+  --sg-white: #FFFFFF;
+  --sg-ivory: #FFFBF9;
+  --sg-cream: #FAF4F0;
+  
+  /* Neutral scale */
+  --sg-gray-50: #FAFAFB;
+  --sg-gray-100: #F4F2F4;
+  --sg-gray-200: #E6E2E6;
+  --sg-gray-300: #D0CAD0;
+  --sg-gray-400: #9E949D;
+  --sg-gray-600: #665D65;
+  --sg-gray-800: #383137;
+  
+  /* Dynamic Collection Accent Defaults (dynamically overridden via data-collection attribute) */
+  --collection-accent: var(--sg-pink);
+  --collection-accent-hover: var(--sg-pink-hover);
+  --collection-bg-tint: var(--sg-pink-light);
+  --collection-pill-bg: var(--sg-pink-soft);
+  --collection-glow: var(--sg-pink-glow);
+
+  /* Typography */
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Type Scale (Elevated for comfortable reading & accessibility) */
+  --text-xs: clamp(0.82rem, 0.8rem + 0.15vw, 0.9rem);
+  --text-sm: clamp(0.92rem, 0.88rem + 0.2vw, 1.02rem);
+  --text-base: clamp(1.02rem, 0.98rem + 0.25vw, 1.15rem);
+  --text-md: clamp(1.18rem, 1.12rem + 0.35vw, 1.35rem);
+  --text-lg: clamp(1.38rem, 1.28rem + 0.6vw, 1.7rem);
+  --text-xl: clamp(1.7rem, 1.55rem + 1vw, 2.25rem);
+  --text-2xl: clamp(2.2rem, 1.95rem + 1.6vw, 3.2rem);
+  --text-3xl: clamp(2.9rem, 2.45rem + 2.8vw, 4.4rem);
+  --text-hero: clamp(3.4rem, 2.85rem + 4.2vw, 6rem);
+
+  /* Line Heights */
+  --leading-tight: 1.02;
+  --leading-snug: 1.2;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* Spacing Scale (4px base step, Inspo vertical rhythm) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+  
+  /* Section Rhythm */
+  --section-rhythm: clamp(64px, 8vw, 112px);
+  --container-max-width: 1360px;
+  --container-padding-inline: clamp(20px, 4vw, 48px);
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+  --radius-card: 22px;
+
+  /* Tactile Shadows & Pop-Art Offsets */
+  --shadow-sm: 0 2px 8px rgba(22, 19, 22, 0.05);
+  --shadow-md: 0 8px 24px rgba(22, 19, 22, 0.08);
+  --shadow-lg: 0 16px 40px rgba(22, 19, 22, 0.12);
+  --shadow-pop: 4px 4px 0px var(--sg-black);
+  --shadow-pop-sm: 2px 2px 0px var(--sg-black);
+  --shadow-pop-pink: 4px 4px 0px var(--sg-pink);
+  --shadow-pop-hover: 6px 6px 0px var(--sg-black);
+
+  /* Transitions */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 180ms var(--ease-out);
+  --transition-normal: 280ms var(--ease-out);
+  --transition-bounce: 400ms var(--ease-spring);
+
+  /* Heights */
+  --announcement-bar-height: 0px;
+  --header-height: 72px;
+  --header-total-height: var(--header-height);
+  --marquee-height: 52px;
+}
+
+/* Fragrance-specific theme overrides when user selects or scrolls to a collection */
+[data-theme='original-pink'] {
+  --collection-accent: #FF3377;
+  --collection-accent-hover: #E01E62;
+  --collection-bg-tint: #FFF0F5;
+  --collection-pill-bg: #FFE4EE;
+  --collection-glow: rgba(255, 51, 119, 0.25);
+}
+
+[data-theme='smoothie-star'] {
+  --collection-accent: #E5A03A;
+  --collection-accent-hover: #C98522;
+  --collection-bg-tint: #FFFBF2;
+  --collection-pill-bg: #FDF1DD;
+  --collection-glow: rgba(229, 160, 58, 0.25);
+}
+
+[data-theme='call-of-fruity'] {
+  --collection-accent: #FF6F59;
+  --collection-accent-hover: #DE4C35;
+  --collection-bg-tint: #FFF5F3;
+  --collection-pill-bg: #FFE8E3;
+  --collection-glow: rgba(255, 111, 89, 0.25);
+}
+
+[data-theme='magnificoco'] {
+  --collection-accent: #169873;
+  --collection-accent-hover: #0E7557;
+  --collection-bg-tint: #F2FAF7;
+  --collection-pill-bg: #DCF3EB;
+  --collection-glow: rgba(22, 152, 115, 0.25);
+}
+
+[data-theme='skincare-face'] {
+  --collection-accent: #00B4D8;
+  --collection-accent-hover: #0096B4;
+  --collection-bg-tint: #F0FBFD;
+  --collection-pill-bg: #DDF5FB;
+  --collection-glow: rgba(0, 180, 216, 0.25);
+}

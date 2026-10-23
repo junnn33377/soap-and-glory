@@ -1,0 +1,381 @@
+/* ==========================================================================
+   Soap & Glory - 404 Not Found Page Styles
+   Retro British Glamour, Halftone Patterns, Bubble Animations & Category Cards
+   ========================================================================== */
+
+.not-found-hero {
+  position: relative;
+  min-height: 70vh;
+  padding: clamp(48px, 8vh, 88px) 0 clamp(40px, 6vh, 64px);
+  background: radial-gradient(circle at 50% 25%, #FFF0F6 0%, #FFF8FA 60%, #FFFFFF 100%);
+  overflow: hidden;
+  border-bottom: 2px solid var(--sg-gray-200);
+}
+
+/* Halftone / Bubble Background Atmosphere */
+.not-found-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 51, 119, 0.08) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Floating Bubbles Animation */
+.bubble-float {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.95), rgba(255, 182, 217, 0.45) 60%, rgba(255, 51, 119, 0.25) 100%);
+  box-shadow: 0 8px 24px rgba(255, 51, 119, 0.18), inset 0 -4px 8px rgba(255, 51, 119, 0.2);
+  pointer-events: none;
+  animation: floatBubble 7s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.bubble-1 {
+  width: 90px;
+  height: 90px;
+  top: 15%;
+  left: 6%;
+  animation-duration: 6s;
+}
+
+.bubble-2 {
+  width: 130px;
+  height: 130px;
+  top: 45%;
+  right: 5%;
+  animation-duration: 8.5s;
+}
+
+.bubble-3 {
+  width: 60px;
+  height: 60px;
+  bottom: 12%;
+  left: 12%;
+  animation-duration: 5s;
+}
+
+.bubble-4 {
+  width: 45px;
+  height: 45px;
+  top: 22%;
+  right: 18%;
+  animation-duration: 7s;
+}
+
+@keyframes floatBubble {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-24px) scale(1.05) rotate(4deg);
+  }
+  100% {
+    transform: translateY(-44px) scale(0.98) rotate(-3deg);
+  }
+}
+
+/* 404 Hero Container */
+.not-found-hero__container {
+  position: relative;
+  z-index: 2;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Giant 404 Typographic Display */
+.not-found-number-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.not-found-number {
+  font-family: var(--font-display);
+  font-size: clamp(6.5rem, 15vw, 12rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #161316;
+  text-shadow: 
+    4px 4px 0 #FF3377, 
+    8px 8px 0 rgba(22, 19, 22, 0.15);
+  user-select: none;
+  margin: 0;
+}
+
+/* Diagonal Vintage Caution / S&G Tape */
+.not-found-stamp {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  background: #FF3377;
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: clamp(0.75rem, 1.8vw, 1.05rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 22px;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(255, 51, 119, 0.4), 0 0 0 3px #161316;
+  white-space: nowrap;
+  animation: stampPulse 3s ease-in-out infinite;
+}
+
+@keyframes stampPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(-8deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(-6deg) scale(1.04);
+  }
+}
+
+/* Headlines */
+.not-found-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #161316;
+  margin: 16px 0 12px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.not-found-title .highlight-pink {
+  color: var(--sg-pink);
+  display: block;
+}
+
+.not-found-lead {
+  font-size: clamp(1rem, 1.3vw, 1.18rem);
+  line-height: 1.65;
+  color: var(--sg-gray-700);
+  max-width: 680px;
+  margin: 0 auto 28px;
+}
+
+/* 404 Search Bar */
+.not-found-search-bar {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto 32px;
+}
+
+.not-found-search-form {
+  display: flex;
+  gap: 8px;
+  background: #FFFFFF;
+  padding: 6px;
+  border-radius: 50px;
+  border: 2px solid #161316;
+  box-shadow: 4px 4px 0 #161316;
+  transition: all 0.2s ease;
+}
+
+.not-found-search-form:focus-within {
+  border-color: var(--sg-pink);
+  box-shadow: 4px 4px 0 var(--sg-pink);
+}
+
+.not-found-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 18px;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  color: #161316;
+  outline: none;
+}
+
+.not-found-search-input::placeholder {
+  color: var(--sg-gray-400);
+}
+
+.not-found-search-btn {
+  background: var(--sg-pink);
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.not-found-search-btn:hover {
+  background: var(--sg-pink-hover);
+  transform: translateY(-1px);
+}
+
+/* Hero CTA Group */
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.not-found-actions .btn {
+  padding: 14px 28px;
+  font-size: 0.95rem;
+}
+
+/* Category Quick Launch Section */
+.not-found-categories {
+  padding: 64px 0;
+  background: #FFFFFF;
+}
+
+.not-found-sec-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 44px;
+}
+
+.not-found-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.not-found-cat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 20px;
+  background: var(--sg-ivory);
+  border: 2px solid var(--sg-gray-200);
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.not-found-cat-card:hover {
+  transform: translateY(-6px);
+  border-color: #161316;
+  box-shadow: 6px 6px 0 #161316;
+  background: #FFFFFF;
+}
+
+.not-found-cat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 14px;
+  transition: transform 0.25s ease;
+}
+
+.not-found-cat-card:hover .not-found-cat-icon {
+  transform: scale(1.15) rotate(4deg);
+}
+
+.not-found-cat-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #161316;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.not-found-cat-desc {
+  font-size: 0.88rem;
+  color: var(--sg-gray-600);
+  line-height: 1.45;
+  margin: 0 0 16px;
+  flex: 1;
+}
+
+.not-found-cat-arrow {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--sg-pink);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.not-found-cat-card:hover .not-found-cat-arrow {
+  color: var(--sg-pink-hover);
+  text-decoration: underline;
+}
+
+/* Bestsellers Showcase Section */
+.not-found-showcase {
+  padding: 64px 0 80px;
+  background: var(--sg-pink-light);
+  border-top: 2px solid var(--sg-gray-200);
+  border-bottom: 2px solid var(--sg-gray-200);
+}
+
+.not-found-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* Fun Quote / Help Dispatch */
+.not-found-quote-box {
+  margin: 48px auto 0;
+  max-width: 680px;
+  background: #FFFFFF;
+  border: 2px dashed #FF3377;
+  border-radius: 12px;
+  padding: 24px 32px;
+  text-align: center;
+}
+
+.not-found-quote-text {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #161316;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.not-found-quote-author {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--sg-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .not-found-cat-grid {
+    grid-template-columns: 1fr;
+  }
+  .not-found-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .not-found-actions .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background Disc: Brand Pink with bold black border -->
+  <circle cx="32" cy="32" r="30" fill="#FF1A75" stroke="#111111" stroke-width="3"/>
+  <!-- Inner White Accent Ring -->
+  <circle cx="32" cy="32" r="25.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-dasharray="3,2" opacity="0.9"/>
+  <!-- Top Gold Star Accent -->
+  <polygon points="32,9 33.5,13.5 38,13.5 34.5,16.2 36,20.5 32,18 28,20.5 29.5,16.2 26,13.5 30.5,13.5" fill="#FFD700" stroke="#111111" stroke-width="0.8"/>
+  <!-- S&G Shadow -->
+  <text x="33.5" y="41" font-family="Impact, 'Arial Black', sans-serif" font-size="20" font-weight="900" fill="#111111" text-anchor="middle" letter-spacing="-0.5px">S&amp;G</text>
+  <!-- S&G Face -->
+  <text x="32" y="39.5" font-family="Impact, 'Arial Black', sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-0.5px">S&amp;G</text>
+  <!-- Bottom Ribbon / Year -->
+  <text x="32" y="51" font-family="Arial, sans-serif" font-size="6.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8px">EST. 2006</text>
+</svg>
