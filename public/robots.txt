@@ -4,4 +4,4 @@ Disallow: /api/
 Disallow: /checkout/
 Disallow: /*?search=
 
-Sitemap: https://soapandglory.co.uk/sitemap.xml
+Sitemap: https://soapandglory.uk/sitemap.xml
