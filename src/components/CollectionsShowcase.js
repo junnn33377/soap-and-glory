@@ -43,11 +43,11 @@ export function renderCollectionsShowcase() {
           <!-- Left Column: Scent Architecture & Story (Full-Height Unified Card) -->
           <div class="collection-story-card">
             <div class="collection-story-card__top">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <span class="badge-stamp" style="background: ${activeCol.accentColor}; border-color: ${activeCol.accentColor}; color: #fff;">
+              <div class="collection-story-card__badge-row">
+                <span class="badge-stamp collection-story-card__badge" style="background: ${activeCol.accentColor}; border-color: ${activeCol.accentColor}; color: #fff;">
                   ${activeCol.heroTag}
                 </span>
-                <span style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 800; color: var(--sg-gray-600); text-transform: uppercase; letter-spacing: 0.05em;">
+                <span class="collection-story-card__family-label">
                   FRAGRANCE FAMILY
                 </span>
               </div>

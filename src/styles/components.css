@@ -681,6 +681,33 @@
 
 .collection-story-card__top {
   margin-bottom: 16px;
+  width: 100%;
+}
+
+.collection-story-card__badge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.collection-story-card__badge {
+  white-space: normal !important;
+  max-width: 100%;
+  font-size: 0.75rem;
+}
+
+.collection-story-card__family-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--sg-gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
 .collection-story-card__title {
