@@ -2,10 +2,8 @@ import { PRODUCTS } from './data/products.js';
 
 class StoreState {
   constructor() {
-    this.cart = this.load('sg_cart', [
-      { id: 'righteous-butter-300ml', size: '300ml', quantity: 1 }
-    ]);
-    this.wishlist = this.load('sg_wishlist', ['clean-on-me-500ml']);
+    this.cart = this.load('sg_cart', []);
+    this.wishlist = this.load('sg_wishlist', []);
     this.activeTheme = 'original-pink';
     this.catalogFilter = 'all';
     this.catalogSort = 'featured';
